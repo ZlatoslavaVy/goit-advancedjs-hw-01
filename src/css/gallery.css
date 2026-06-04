@@ -3,7 +3,8 @@
 }
 
 body {
-  margin: 24px 156px;
+  padding: 24px;
+  display: flex;
 }
 
 ul,

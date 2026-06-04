@@ -1,3 +1,8 @@
+// Описаний в документації
+import SimpleLightbox from 'simplelightbox';
+// Додатковий імпорт стилів
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -87,29 +92,7 @@ const imagesCardsTemplate = images
 
 refs.ulGallery.innerHTML = imagesCardsTemplate;
 
-// const onImageClick = event => {
-//   event.preventDefault();
-//   if (event.target === event.currentTarget) {
-//     return;
-//   }
-
-//   const imageCardEl = event.target;
-
-//   const imageSource = imageCardEl.dataset.source;
-
-//   const { preview, original, description } = images.find(
-//     image => image.original === imageSource
-//   );
-
-//   const modalWindowInstance = basicLightbox.create(`
-//     <img
-//       class="gallery-image"
-//       src="${preview}"
-//       data-source="${original}"
-//       alt="${description}"
-//     />
-//     `);
-//   modalWindowInstance.show();
-// };
-
-// refs.ulGallery.addEventListener('click', onImageClick);
+new SimpleLightbox('.js-gallery-list a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});

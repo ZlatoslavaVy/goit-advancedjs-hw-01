@@ -33,12 +33,12 @@
 }
 
 .btn {
+  align-self: flex-start;
   border-radius: 8px;
   padding: 8px 16px;
   background-color: #4e75ff;
   border: none;
   color: #fff;
-  width: 100%;
 }
 
 .feedback-form input,

@@ -1,0 +1,28 @@
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wind-email {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 360px;
+  height: 40px;
+}
+
+.wind-message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 360px;
+  height: 80px;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  border: none;
+}

@@ -70,7 +70,7 @@ const images = [
 ];
 
 const refs = {
-  ulGallery: document.querySelector('.js-gallery-list'),
+  ulGallery: document.querySelector('.gallery'),
 };
 
 const createImageCardTemplate = ({ preview, original, description }) => {
@@ -92,7 +92,7 @@ const imagesCardsTemplate = images
 
 refs.ulGallery.innerHTML = imagesCardsTemplate;
 
-new SimpleLightbox('.js-gallery-list a', {
+new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
